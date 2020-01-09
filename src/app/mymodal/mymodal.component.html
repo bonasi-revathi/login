@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h4 class="modal-title text-primary">Change password</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+  <div class="modal-body">
+    <form >
+      <div class="form-group">
+        <input type="text" class="form-control" name="password" placeholder="Enter your password" [(ngModel)]="password">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="password1" placeholder="Enter your confirm Password" [(ngModel)]="password1">
+      </div>
+      <div class="form-group" *ngIf="passmismatch">
+        <p class="text-danger">Please enter the same password</p>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="Updatepassword()">Update Password</button>
+  </div>
