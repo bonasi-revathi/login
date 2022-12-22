@@ -25,7 +25,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "generate-password": "^1.4.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.8.4",
     "nodemailer": "^6.4.2",
     "password-generator": "^2.2.3",
